@@ -2,7 +2,7 @@
 random codes used in arduino and PlatformIO
 ### Latch
 a code i used as a demo of the WeAct STM32G431 board [(link)](https://github.com/WeActStudio/WeActStudio.STM32G431CoreBoard)
-´´´
+```
 int state = 0, LEDstate=0;
 
 void setup()
@@ -22,4 +22,4 @@ void loop()
   }
    digitalWrite(PC6, LEDstate);
 }
-´´´
+```
