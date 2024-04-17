@@ -1,7 +1,7 @@
 # Arduino codes
 random codes used in arduino and PlatformIO
 ### Latch
-a code i used as a demo of the WeAct STM32G431 board [(link)](https://github.com/WeActStudio/WeActStudio.STM32G431CoreBoard)
+This is a test i used to demo the WeAct STM32G431 board with its built in button and led ([link](https://github.com/WeActStudio/WeActStudio.STM32G431CoreBoard))
 ```
 int state = 0, LEDstate=0;
 
