@@ -23,3 +23,33 @@ void loop()
    digitalWrite(PC6, LEDstate);
 }
 ```
+### SD card via SPI 
+```
+#include <SPI.h>
+#include <SD.h>
+
+
+#define SD_CS   45  
+#define SD_CLK  39  
+#define SD_MOSI 42  
+#define SD_MISO 21
+
+void setup() {
+  Serial.begin(115200);
+
+  Serial.println("Initializing SD card over SPI...");
+
+  SPI.begin(SD_CLK, SD_MISO, SD_MOSI, SD_CS);
+
+  if (!SD.begin(SD_CS)) {
+    Serial.println("Card failed or not present.");
+    return;
+  }
+
+  Serial.println("Card initialized successfully.");
+}
+
+void loop() {
+}
+
+```
